@@ -1,0 +1,164 @@
+
+.menu-container {
+  background-color: #e5e5e5;
+  min-height: 100vh;
+  padding: 16px;
+  font-family: 'Sarabun', sans-serif; /* แนะนำให้ใช้ฟอนต์ภาษาไทย เช่น Sarabun */
+  position: relative;
+  max-width: 480px; /* จำลองขนาดหน้าจอมือถือ */
+  margin: 0 auto;
+}
+
+.menu-header {
+  margin-bottom: 20px;
+}
+
+.table-info {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header-top h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #222;
+}
+
+.history-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.cat-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
+  color: #555;
+}
+
+.cat-btn.active {
+  background-color: #8bb4f6; /* สีฟ้าตามภาพ */
+  color: #000;
+  font-weight: bold;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding-bottom: 80px; /* เผื่อพื้นที่ให้ปุ่มตะกร้า */
+}
+
+.menu-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.menu-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.menu-name {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #222;
+}
+
+.menu-subtitle {
+  font-size: 12px;
+  color: #4b8df8;
+  margin: 4px 0;
+}
+
+.menu-price {
+  font-size: 14px;
+  color: #4b8df8;
+  margin: 4px 0 12px 0;
+}
+
+.order-btn {
+  background-color: #4b8df8;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.floating-cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* ปรับให้อยู่มุมขวาล่างของคอนเทนเนอร์ */
+  background-color: #8ee98e;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.cart-icon {
+  font-size: 24px;
+}
+
+.cart-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
